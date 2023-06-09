@@ -1,0 +1,22 @@
+:root{
+    --main: #893919;
+}
+
+.title  {
+    font-size: medium;
+    color: black;
+    padding: 10px;
+}
+.header {
+    columns: center;
+    display: flex;
+    justify-content: center;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--main);
+}
+footer {
+    display: flex;
+    justify-content: center;
+}
