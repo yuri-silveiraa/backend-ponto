@@ -35,7 +35,7 @@ export const Overtime = sequelize.define<OvertimeInstance>('Overtime', {
         allowNull: false
     }
 }, {
-    tableName: "schedules",
+    tableName: "overtime_and_delays",
     timestamps: false
 })
 

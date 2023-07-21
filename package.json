@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node ./dist/index.js",
-    "dev": "nodemon -e ts,json,mustache src/index.ts"
+    "dev": "nodemon -e ts,json src/index.ts"
   },
   "author": "Yuri",
   "license": "ISC",
@@ -18,6 +18,7 @@
   "dependencies": {
     "dotenv": "^16.1.4",
     "express": "^4.18.2",
+    "mysql2": "^3.5.2",
     "sequelize": "^6.32.1"
   }
 }

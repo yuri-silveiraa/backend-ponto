@@ -8,7 +8,7 @@ export interface UserInstance extends Model {
     user_id: Number,
     employee_id: Number,
     user: String,
-    password: Number
+    password: String | Number
 }
 
 export const User = sequelize.define<UserInstance>('User', {
@@ -22,6 +22,10 @@ export const User = sequelize.define<UserInstance>('User', {
         allowNull: false
     },
     user: {
+        type: DataTypes.STRING,
+        allowNull: false
+    },
+    password: {
         type: DataTypes.STRING,
         allowNull: false
     }
