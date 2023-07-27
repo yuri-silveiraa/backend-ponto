@@ -13,5 +13,9 @@ router.delete('/user/:id', UserController.deleteUser)
 
 // EMPLOYEES
 router.post('/employee', EmployeeController.createEmployee)
+router.get('/listemployees', EmployeeController.listEmployees)
+router.get('/employee/:id', EmployeeController.getEmployee)
+router.put('/employee/:id', EmployeeController.updateEmployee)
+router.delete('/employee/:id', EmployeeController.deleteEmployee)
 
 export default router
