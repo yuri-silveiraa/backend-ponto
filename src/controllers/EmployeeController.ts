@@ -43,6 +43,6 @@ export const updateEmployee = async (req: Request, res: Response) => {
 export const deleteEmployee = async (req: Request, res: Response) => {
     let id = req.params.id
 
-    await Employee.destroy({ where: { id } })
+    await Employee.destroy({ where: { employee_id: id } })
     res.json({ message: 'deleted with success' })
 }
