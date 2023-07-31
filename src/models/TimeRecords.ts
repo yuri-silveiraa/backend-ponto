@@ -8,7 +8,7 @@ export interface RecordInstance extends Model {
     record_id: Number,
     employee_id: Number,
     timestamp: Date,
-    tipo: 'entrada' | 'saída',
+    tipo: 'entrada' | 'saida',
 }
 
 export const Record = sequelize.define<RecordInstance>('Record', {
@@ -26,7 +26,7 @@ export const Record = sequelize.define<RecordInstance>('Record', {
         allowNull: false
     },
     tipo: {
-        type: DataTypes.ENUM,
+        type: DataTypes.ENUM('entrada', 'saida'),
         allowNull: false
     }
 }, {
